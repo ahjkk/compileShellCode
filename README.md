@@ -8,7 +8,7 @@ In this program shellcode is read from a file as raw bytes, converted into C++ b
 
 This program must be run from the Visual Studio command line as it relies on cl.exe to compile the C++, and currently it only supports x86 for Windows. In the future I will add x64 and probably support for g++.
 
-'''
+```
 usage: compileShellCode.py [-h] -s SHELLCODEPATH -o OUTFILENAME
 
 Inserts up to 65,535 bytes of shellcode into a .cpp file and then compiles it.
@@ -22,5 +22,5 @@ optional arguments:
                         Output filename with no extension
 
 ex: python compileShellCode.py -s myShellcode -o out
-'''
+```
 
