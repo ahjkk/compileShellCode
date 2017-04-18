@@ -4,6 +4,8 @@ CompileShellCode.py enables you to embed up to ~65,535 bytes of x86 shellcode in
 
 In this program shellcode is read from a file as raw bytes, converted into C++ byte strings, and then inserted into a C++ source code template (cppcode.py) that marks the shellcode as executable using VirtualProtect so you can easily set breakpoints within the finished executable. It also disables ASLR and sets the preferred load address of the executable. 
 
+65,535 bytes is the [maximum string](https://msdn.microsoft.com/en-us/library/sx08afx2.aspx) size in visual studio.
+
 ## Usage
 
 This program must be run from the Visual Studio command line as it relies on cl.exe to compile the C++, and currently it only supports x86 for Windows. In the future I will add x64 and probably support for g++.
