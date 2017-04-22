@@ -18,7 +18,7 @@ shellcode.rc - Contains the resource script used by the resource compiler (rc.ex
 
 ## Usage
 
-This program must be run from the Visual Studio command line as it relies on cl.exe to compile the C++, and currently it only supports x86 for Windows. In the future I will add x64 support. Make sure to check the load resourses box in Ida Pro when you load the exe. You can easily find the shellcode by going to the resource section or searching for the Unicode string SHELLCODE.
+This program must be run from the Visual Studio command line as it relies on cl.exe to compile the C++ and rc.exe to compile the resource. Currently it only supports x86 for Windows, but in the future I will add x64 support. Make sure to check the load resourses box in Ida Pro when you load the exe. You can easily find the shellcode by going to the resource section or searching for the Unicode string SHELLCODE.
 
 ```
 usage: compileShellCode.py [-h] -s SHELLCODEPATH -o OUTFILENAME
