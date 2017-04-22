@@ -6,9 +6,7 @@ code = '''
 
 int main()
 {{
-    uint8_t shellCode[] = {0};
-    SIZE_T shellCodeSize = {1};
-
+    SIZE_T shellCodeSize = {0};
 
     //Get location of exe in memory
     HANDLE mHandle = GetModuleHandle(0);
