@@ -7,8 +7,11 @@ In this program shellcode is read from a file, converted into a resource, and th
 ## Files:
 
 compileShellCode.py - Reads the shellcode file, sets up everything needed by the compiler, and runs the compiler
+
 cppcode.py - C++ source code template that makes up the finished executable
+
 resource.h - Header file which defines the resource definitions
+
 shellcode.rc - Contains the resource script used by the resource compiler (rc.exe)
 
 ## Usage
