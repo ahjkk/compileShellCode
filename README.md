@@ -10,7 +10,7 @@ compileShellCode.py - Reads the shellcode file, sets up everything needed by the
 
 cppcode.py - C++ source code template that makes up the finished executable
 
-resource.h - Header file which defines the resource definitions
+resource.h - Header file which contains the resource definition
 
 shellcode.rc - Contains the resource script used by the resource compiler (rc.exe)
 
