@@ -2,7 +2,7 @@
 
 CompileShellCode.py enables you to embed ~~up to 65,535 bytes of~~ x86 shellcode into a Windows executable and then execute it. It was built to solve the problems associated with analyzing injected malware that is composed solely of posistion independent code. In the past I would load and execute my shellcode from a seperate file, but setting breakpoints and saving comments for shellcode executed in this way gets pretty frustrating in Ida Pro in my opinion.
 
-In this program shellcode is read from a file, converted into a resource, and then compiled into an executable that will search for the shellcode and then make the shellcode executable using VirtualProtect so you can easily set breakpoints within the finished executable. It also disables ASLR (warning) and sets the preferred load address of the executable. 
+In this program shellcode is read from a file, converted into a resource, and then compiled into an executable that will search for the shellcode and then make the shellcode executable using VirtualProtect so you can easily set breakpoints within the finished executable. It also disables ASLR (danger) and sets the preferred load address of the executable. 
 
 Previously, I was inserting the shellcode into the template file, but could only insert up to 65,525 bytes which is the max string size in Visual Studio. Using a resource file eliminates that constraint, but did require adding more resource related files to the project.
 
